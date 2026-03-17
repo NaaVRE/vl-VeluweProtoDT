@@ -1,0 +1,919 @@
+{
+  "chart": {
+    "offset": {
+      "x": 170.23,
+      "y": 119.94
+    },
+    "scale": 0.46,
+    "nodes": {
+      "d3054f82-1be6-4402-8ea0-b0b04f6dfb14": {
+        "id": "d3054f82-1be6-4402-8ea0-b0b04f6dfb14",
+        "position": {
+          "x": 2057.120374704377,
+          "y": 680.6155564314802
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "scenario_data_all_file": {
+            "properties": {
+              "color": "#87a4c5"
+            },
+            "id": "scenario_data_all_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 32
+            }
+          },
+          "budburst_climwin_input_file": {
+            "properties": {
+              "color": "#e08b6c"
+            },
+            "id": "budburst_climwin_input_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 60
+            }
+          },
+          "firstWindow_file": {
+            "properties": {
+              "color": "#931f1f"
+            },
+            "id": "firstWindow_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 88
+            }
+          },
+          "temp_climwin_input_file": {
+            "properties": {
+              "color": "#97ac53"
+            },
+            "id": "temp_climwin_input_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 116
+            }
+          },
+          "validation_all_zScores_file": {
+            "properties": {
+              "color": "#d2ac79"
+            },
+            "id": "validation_all_zScores_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 74
+            }
+          }
+        },
+        "properties": {
+          "title": "Validate forecasting model-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "scenario_data_all_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#87a4c5"
+            },
+            {
+              "name": "budburst_climwin_input_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#e08b6c"
+            },
+            {
+              "name": "firstWindow_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#931f1f"
+            },
+            {
+              "name": "temp_climwin_input_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#97ac53"
+            },
+            {
+              "name": "validation_all_zScores_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#d2ac79"
+            }
+          ],
+          "params": [],
+          "inputs": [
+            "scenario_data_all_file",
+            "budburst_climwin_input_file",
+            "firstWindow_file",
+            "temp_climwin_input_file"
+          ],
+          "outputs": [
+            "validation_all_zScores_file"
+          ],
+          "og_node_id": "8965d54",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "bd27163d-0244-45d9-993c-45361241d85f": {
+        "id": "bd27163d-0244-45d9-993c-45361241d85f",
+        "position": {
+          "x": 192.64360796652332,
+          "y": 25.041403153722918
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "occurrence_file": {
+            "properties": {
+              "color": "#7a862d"
+            },
+            "id": "occurrence_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 46
+            }
+          },
+          "event_file": {
+            "properties": {
+              "color": "#93651f"
+            },
+            "id": "event_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 74
+            }
+          },
+          "extendedmeasurementorfact_file": {
+            "properties": {
+              "color": "#bf5740"
+            },
+            "id": "extendedmeasurementorfact_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 102
+            }
+          }
+        },
+        "properties": {
+          "title": "Retrieve bud burst data-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "occurrence_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#7a862d"
+            },
+            {
+              "name": "event_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#93651f"
+            },
+            {
+              "name": "extendedmeasurementorfact_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#bf5740"
+            }
+          ],
+          "params": [
+            "param_dataverse_api_key"
+          ],
+          "inputs": [],
+          "outputs": [
+            "occurrence_file",
+            "event_file",
+            "extendedmeasurementorfact_file"
+          ],
+          "og_node_id": "488741b",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "c94247fc-d18f-4fce-ac32-0892f9fb4fad": {
+        "id": "c94247fc-d18f-4fce-ac32-0892f9fb4fad",
+        "position": {
+          "x": 1570.8147016506446,
+          "y": 317.9323720381146
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "budburst_climwin_input_file": {
+            "properties": {
+              "color": "#e08b6c"
+            },
+            "id": "budburst_climwin_input_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 60
+            }
+          },
+          "temp_climwin_input_file": {
+            "properties": {
+              "color": "#97ac53"
+            },
+            "id": "temp_climwin_input_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 88
+            }
+          },
+          "firstWindow_file": {
+            "properties": {
+              "color": "#931f1f"
+            },
+            "id": "firstWindow_file",
+            "type": "right",
+            "position": {
+              "x": 198.5,
+              "y": 74
+            }
+          }
+        },
+        "properties": {
+          "title": "Find climate window-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "budburst_climwin_input_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#e08b6c"
+            },
+            {
+              "name": "temp_climwin_input_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#97ac53"
+            },
+            {
+              "name": "firstWindow_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#931f1f"
+            }
+          ],
+          "params": [],
+          "inputs": [
+            "budburst_climwin_input_file",
+            "temp_climwin_input_file"
+          ],
+          "outputs": [
+            "firstWindow_file"
+          ],
+          "og_node_id": "e0119c5",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "27da98ff-5984-4026-a485-beaa188f3b3c": {
+        "id": "27da98ff-5984-4026-a485-beaa188f3b3c",
+        "position": {
+          "x": 2333.7461186688247,
+          "y": 345.32203782035833
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "firstWindow_file": {
+            "properties": {
+              "color": "#931f1f"
+            },
+            "id": "firstWindow_file",
+            "type": "left",
+            "position": {
+              "x": 49.5,
+              "y": 74
+            }
+          }
+        },
+        "properties": {
+          "title": "Plot climate window output-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "firstWindow_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#931f1f"
+            }
+          ],
+          "params": [],
+          "inputs": [
+            "firstWindow_file"
+          ],
+          "outputs": [],
+          "og_node_id": "cec525a",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "3cdece93-6ce5-4330-9fd7-8c6a4a97b796": {
+        "id": "3cdece93-6ce5-4330-9fd7-8c6a4a97b796",
+        "position": {
+          "x": 195.4213295282063,
+          "y": 260.1477358967873
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "temperature_file": {
+            "properties": {
+              "color": "#2d3a86"
+            },
+            "id": "temperature_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 74
+            }
+          }
+        },
+        "properties": {
+          "title": "Retrieve KNMI temperature data-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "temperature_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#2d3a86"
+            }
+          ],
+          "params": [
+            "param_knmi_edr_api_key"
+          ],
+          "inputs": [],
+          "outputs": [
+            "temperature_file"
+          ],
+          "og_node_id": "f5f54a3",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "2f76ef72-bd63-4442-806d-a1241b9b664c": {
+        "id": "2f76ef72-bd63-4442-806d-a1241b9b664c",
+        "position": {
+          "x": 662.1107782064258,
+          "y": 22.362551648536993
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "event_file": {
+            "properties": {
+              "color": "#93651f"
+            },
+            "id": "event_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 46
+            }
+          },
+          "extendedmeasurementorfact_file": {
+            "properties": {
+              "color": "#bf5740"
+            },
+            "id": "extendedmeasurementorfact_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 74
+            }
+          },
+          "occurrence_file": {
+            "properties": {
+              "color": "#7a862d"
+            },
+            "id": "occurrence_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 102
+            }
+          },
+          "budburst_file": {
+            "properties": {
+              "color": "#53ac68"
+            },
+            "id": "budburst_file",
+            "type": "right",
+            "position": {
+              "x": 207.5,
+              "y": 74
+            }
+          }
+        },
+        "properties": {
+          "title": "Process bud burst data-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "event_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#93651f"
+            },
+            {
+              "name": "extendedmeasurementorfact_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#bf5740"
+            },
+            {
+              "name": "occurrence_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#7a862d"
+            },
+            {
+              "name": "budburst_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#53ac68"
+            }
+          ],
+          "params": [],
+          "inputs": [
+            "event_file",
+            "extendedmeasurementorfact_file",
+            "occurrence_file"
+          ],
+          "outputs": [
+            "budburst_file"
+          ],
+          "og_node_id": "552d715",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "b60314ae-222d-4367-a615-332b2d2810b7": {
+        "id": "b60314ae-222d-4367-a615-332b2d2810b7",
+        "position": {
+          "x": 1171.1207637536584,
+          "y": 315.2860892620066
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "event_file": {
+            "properties": {
+              "color": "#93651f"
+            },
+            "id": "event_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 18
+            }
+          },
+          "extendedmeasurementorfact_file": {
+            "properties": {
+              "color": "#bf5740"
+            },
+            "id": "extendedmeasurementorfact_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 46
+            }
+          },
+          "occurrence_file": {
+            "properties": {
+              "color": "#7a862d"
+            },
+            "id": "occurrence_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 74
+            }
+          },
+          "budburst_file": {
+            "properties": {
+              "color": "#53ac68"
+            },
+            "id": "budburst_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 102
+            }
+          },
+          "temperature_file": {
+            "properties": {
+              "color": "#2d3a86"
+            },
+            "id": "temperature_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 130
+            }
+          },
+          "budburst_climwin_input_file": {
+            "properties": {
+              "color": "#e08b6c"
+            },
+            "id": "budburst_climwin_input_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 60
+            }
+          },
+          "temp_climwin_input_file": {
+            "properties": {
+              "color": "#97ac53"
+            },
+            "id": "temp_climwin_input_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 88
+            }
+          }
+        },
+        "properties": {
+          "title": "Prepare climwin input-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "event_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#93651f"
+            },
+            {
+              "name": "extendedmeasurementorfact_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#bf5740"
+            },
+            {
+              "name": "occurrence_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#7a862d"
+            },
+            {
+              "name": "budburst_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#53ac68"
+            },
+            {
+              "name": "temperature_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#2d3a86"
+            },
+            {
+              "name": "budburst_climwin_input_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#e08b6c"
+            },
+            {
+              "name": "temp_climwin_input_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#97ac53"
+            }
+          ],
+          "params": [],
+          "inputs": [
+            "event_file",
+            "extendedmeasurementorfact_file",
+            "occurrence_file",
+            "budburst_file",
+            "temperature_file"
+          ],
+          "outputs": [
+            "budburst_climwin_input_file",
+            "temp_climwin_input_file"
+          ],
+          "og_node_id": "fef8eb9",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "c60eefb0-9990-4938-8c05-93f54aa3e49d": {
+        "id": "c60eefb0-9990-4938-8c05-93f54aa3e49d",
+        "position": {
+          "x": 2340.369670542637,
+          "y": 675.4186046511628
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "validation_all_zScores_file": {
+            "properties": {
+              "color": "#d2ac79"
+            },
+            "id": "validation_all_zScores_file",
+            "type": "left",
+            "position": {
+              "x": 50.5,
+              "y": 74
+            }
+          }
+        },
+        "properties": {
+          "title": "Forecast bud burst-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "validation_all_zScores_file",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#d2ac79"
+            }
+          ],
+          "params": [],
+          "inputs": [
+            "validation_all_zScores_file"
+          ],
+          "outputs": [],
+          "og_node_id": "4166677",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "bb34ac5a-9d7c-490e-9936-09c8234bc44e": {
+        "id": "bb34ac5a-9d7c-490e-9936-09c8234bc44e",
+        "position": {
+          "x": 202.28104390836506,
+          "y": 540.8559527941688
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "scenario_data_all_file": {
+            "properties": {
+              "color": "#87a4c5"
+            },
+            "id": "scenario_data_all_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 74
+            }
+          }
+        },
+        "properties": {
+          "title": "Retrieve scenario data-cherine-jantzen-at-gmail-com",
+          "vars": [
+            {
+              "name": "scenario_data_all_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#87a4c5"
+            }
+          ],
+          "params": [],
+          "inputs": [],
+          "outputs": [
+            "scenario_data_all_file"
+          ],
+          "og_node_id": "7832680",
+          "deps": [
+            ""
+          ]
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      }
+    },
+    "links": {
+      "69608e65-f0ce-4fae-9daf-3e707447f2fa": {
+        "id": "69608e65-f0ce-4fae-9daf-3e707447f2fa",
+        "from": {
+          "nodeId": "c94247fc-d18f-4fce-ac32-0892f9fb4fad",
+          "portId": "firstWindow_file"
+        },
+        "to": {
+          "nodeId": "27da98ff-5984-4026-a485-beaa188f3b3c",
+          "portId": "firstWindow_file"
+        }
+      },
+      "06ca2f4a-501b-4f7b-b9a0-3e64edd5deb8": {
+        "id": "06ca2f4a-501b-4f7b-b9a0-3e64edd5deb8",
+        "from": {
+          "nodeId": "bd27163d-0244-45d9-993c-45361241d85f",
+          "portId": "occurrence_file"
+        },
+        "to": {
+          "nodeId": "2f76ef72-bd63-4442-806d-a1241b9b664c",
+          "portId": "occurrence_file"
+        }
+      },
+      "561320d3-516d-4adf-a92e-c5f301b0c9d3": {
+        "id": "561320d3-516d-4adf-a92e-c5f301b0c9d3",
+        "from": {
+          "nodeId": "bd27163d-0244-45d9-993c-45361241d85f",
+          "portId": "extendedmeasurementorfact_file"
+        },
+        "to": {
+          "nodeId": "2f76ef72-bd63-4442-806d-a1241b9b664c",
+          "portId": "extendedmeasurementorfact_file"
+        }
+      },
+      "3f888b50-bb61-49c2-bea1-8977a1050d10": {
+        "id": "3f888b50-bb61-49c2-bea1-8977a1050d10",
+        "from": {
+          "nodeId": "bd27163d-0244-45d9-993c-45361241d85f",
+          "portId": "event_file"
+        },
+        "to": {
+          "nodeId": "2f76ef72-bd63-4442-806d-a1241b9b664c",
+          "portId": "event_file"
+        }
+      },
+      "e2acaee1-8230-4c0b-8c99-bfe59c6d95aa": {
+        "id": "e2acaee1-8230-4c0b-8c99-bfe59c6d95aa",
+        "from": {
+          "nodeId": "2f76ef72-bd63-4442-806d-a1241b9b664c",
+          "portId": "budburst_file"
+        },
+        "to": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "budburst_file"
+        }
+      },
+      "f10979e0-7f9c-4cbd-9ed7-8a9c41ac7e85": {
+        "id": "f10979e0-7f9c-4cbd-9ed7-8a9c41ac7e85",
+        "from": {
+          "nodeId": "bd27163d-0244-45d9-993c-45361241d85f",
+          "portId": "occurrence_file"
+        },
+        "to": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "occurrence_file"
+        }
+      },
+      "598e9819-dc66-470d-bb1f-caec78322a5e": {
+        "id": "598e9819-dc66-470d-bb1f-caec78322a5e",
+        "from": {
+          "nodeId": "bd27163d-0244-45d9-993c-45361241d85f",
+          "portId": "event_file"
+        },
+        "to": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "event_file"
+        }
+      },
+      "b2f0ebad-1485-403c-a901-5b96ac587d8d": {
+        "id": "b2f0ebad-1485-403c-a901-5b96ac587d8d",
+        "from": {
+          "nodeId": "bd27163d-0244-45d9-993c-45361241d85f",
+          "portId": "extendedmeasurementorfact_file"
+        },
+        "to": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "extendedmeasurementorfact_file"
+        }
+      },
+      "57d87746-f4f0-4c4f-ae9c-58fe4e2952df": {
+        "id": "57d87746-f4f0-4c4f-ae9c-58fe4e2952df",
+        "from": {
+          "nodeId": "3cdece93-6ce5-4330-9fd7-8c6a4a97b796",
+          "portId": "temperature_file"
+        },
+        "to": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "temperature_file"
+        }
+      },
+      "eb9b0856-e6ab-4a7c-a23c-905f5072433f": {
+        "id": "eb9b0856-e6ab-4a7c-a23c-905f5072433f",
+        "from": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "budburst_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "c94247fc-d18f-4fce-ac32-0892f9fb4fad",
+          "portId": "budburst_climwin_input_file"
+        }
+      },
+      "ec4fa54f-bef2-4a63-bb5d-97974b023470": {
+        "id": "ec4fa54f-bef2-4a63-bb5d-97974b023470",
+        "from": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "temp_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "c94247fc-d18f-4fce-ac32-0892f9fb4fad",
+          "portId": "temp_climwin_input_file"
+        }
+      },
+      "6f8c807e-c137-4651-800e-e12af89883a9": {
+        "id": "6f8c807e-c137-4651-800e-e12af89883a9",
+        "from": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "budburst_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "d3054f82-1be6-4402-8ea0-b0b04f6dfb14",
+          "portId": "budburst_climwin_input_file"
+        }
+      },
+      "a489ea40-30fc-4eee-a873-6ef13dacbe08": {
+        "id": "a489ea40-30fc-4eee-a873-6ef13dacbe08",
+        "from": {
+          "nodeId": "b60314ae-222d-4367-a615-332b2d2810b7",
+          "portId": "temp_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "d3054f82-1be6-4402-8ea0-b0b04f6dfb14",
+          "portId": "temp_climwin_input_file"
+        }
+      },
+      "f7570483-ccfd-44a6-beac-ad1b29e43062": {
+        "id": "f7570483-ccfd-44a6-beac-ad1b29e43062",
+        "from": {
+          "nodeId": "c94247fc-d18f-4fce-ac32-0892f9fb4fad",
+          "portId": "firstWindow_file"
+        },
+        "to": {
+          "nodeId": "d3054f82-1be6-4402-8ea0-b0b04f6dfb14",
+          "portId": "firstWindow_file"
+        }
+      },
+      "6cdf3f69-41df-45c1-a73f-0ba71f7192a1": {
+        "id": "6cdf3f69-41df-45c1-a73f-0ba71f7192a1",
+        "from": {
+          "nodeId": "d3054f82-1be6-4402-8ea0-b0b04f6dfb14",
+          "portId": "validation_all_zScores_file"
+        },
+        "to": {
+          "nodeId": "c60eefb0-9990-4938-8c05-93f54aa3e49d",
+          "portId": "validation_all_zScores_file"
+        }
+      },
+      "5f8758c9-9f49-4033-954d-013fdd35d66f": {
+        "id": "5f8758c9-9f49-4033-954d-013fdd35d66f",
+        "from": {
+          "nodeId": "bb34ac5a-9d7c-490e-9936-09c8234bc44e",
+          "portId": "scenario_data_all_file"
+        },
+        "to": {
+          "nodeId": "d3054f82-1be6-4402-8ea0-b0b04f6dfb14",
+          "portId": "scenario_data_all_file"
+        }
+      }
+    },
+    "selected": {},
+    "hovered": {}
+  }
+}
