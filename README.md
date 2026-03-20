@@ -1,6 +1,10 @@
+> 🛑 Not maintained
+>
+> This project is currently not being maintained. [Get in touch](mailto:VLIC@lifewatch.eu) if you want to reuse the assets in this lab.
+
 # VeluweProtoDT Virtual Lab on NaaVRE
 
-Documents for initializing Veluwe Proto DT virtual labs on NaaVRE.
+Documents for initializing Veluwe Proto DT virtual labs on [NaaVRE](https://naavre.net/).
 The virtual lab contains the following:
 
 - [Source code in a Jupyter Notebook](./codebase/Veluwe-proto-DT-v2-GitHub.ipynb)

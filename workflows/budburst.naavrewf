@@ -1,0 +1,1285 @@
+{
+  "chart": {
+    "offset": {
+      "x": -0.97,
+      "y": -150.06
+    },
+    "scale": 0.793,
+    "nodes": {
+      "49f633d0-807c-4ffa-b90d-921c4ce8bb16": {
+        "id": "49f633d0-807c-4ffa-b90d-921c4ce8bb16",
+        "position": {
+          "x": 419.982414678547,
+          "y": 575.883984867591
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "event_file": {
+            "id": "event_file",
+            "type": "right",
+            "properties": {
+              "color": "#2d7e86",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 13
+            }
+          },
+          "extendedmeasurementorfact_file": {
+            "id": "extendedmeasurementorfact_file",
+            "type": "right",
+            "properties": {
+              "color": "#d22d88",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 39
+            }
+          },
+          "occurrence_file": {
+            "id": "occurrence_file",
+            "type": "right",
+            "properties": {
+              "color": "#783a61",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 65
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/1631bf16-61ce-4523-9942-15d11eddd46f/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "purrr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "httr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "jsonlite",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "taxize",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "event_file",
+                "type": "str"
+              },
+              {
+                "name": "extendedmeasurementorfact_file",
+                "type": "str"
+              },
+              {
+                "name": "occurrence_file",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "retrieve-bud-burst-data-koen-greuell-lifewatch-eu",
+            "description": "retrieve-bud-burst-data-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T10:55:05.989083Z",
+            "modified": "2026-03-20T10:55:06.409614Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/retrieve-bud-burst-data-koen-greuell-lifewatch-eu:e8fe3bd",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/c1b93b15cbdda0b336d6f36f19b8d3cd67c182cc/retrieve-bud-burst-data-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 79
+        }
+      },
+      "c413ee0f-4b17-4436-8e03-1f7b465104ac": {
+        "id": "c413ee0f-4b17-4436-8e03-1f7b465104ac",
+        "position": {
+          "x": 769.7617337201613,
+          "y": 417.2622950819673
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "event_file": {
+            "id": "event_file",
+            "type": "left",
+            "properties": {
+              "color": "#2d7e86",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "extendedmeasurementorfact_file": {
+            "id": "extendedmeasurementorfact_file",
+            "type": "left",
+            "properties": {
+              "color": "#d22d88",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "occurrence_file": {
+            "id": "occurrence_file",
+            "type": "left",
+            "properties": {
+              "color": "#783a61",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "budburst_file": {
+            "id": "budburst_file",
+            "type": "right",
+            "properties": {
+              "color": "#d29b2d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 39
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/e6f78ec3-a859-4b41-a93e-56d206b324af/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "event_file",
+                "type": "str"
+              },
+              {
+                "name": "extendedmeasurementorfact_file",
+                "type": "str"
+              },
+              {
+                "name": "occurrence_file",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "budburst_file",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "process-bud-burst-data-koen-greuell-lifewatch-eu",
+            "description": "process-bud-burst-data-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T12:33:30.553083Z",
+            "modified": "2026-03-20T12:33:30.801667Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/process-bud-burst-data-koen-greuell-lifewatch-eu:02937af",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/60e163dc3bfe8282d704464916f32efc836d52be/process-bud-burst-data-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 79
+        }
+      },
+      "5847ab3a-f175-423b-849d-d2f50682340f": {
+        "id": "5847ab3a-f175-423b-849d-d2f50682340f",
+        "position": {
+          "x": 1049.6331082472727,
+          "y": 518.7767969735179
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "budburst_file": {
+            "id": "budburst_file",
+            "type": "left",
+            "properties": {
+              "color": "#d29b2d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "event_file": {
+            "id": "event_file",
+            "type": "left",
+            "properties": {
+              "color": "#2d7e86",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "extendedmeasurementorfact_file": {
+            "id": "extendedmeasurementorfact_file",
+            "type": "left",
+            "properties": {
+              "color": "#d22d88",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "occurrence_file": {
+            "id": "occurrence_file",
+            "type": "left",
+            "properties": {
+              "color": "#783a61",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "temperature_file": {
+            "id": "temperature_file",
+            "type": "left",
+            "properties": {
+              "color": "#ac5393",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 117
+            }
+          },
+          "budburst_climwin_input_file": {
+            "id": "budburst_climwin_input_file",
+            "type": "right",
+            "properties": {
+              "color": "#c59387",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 52
+            }
+          },
+          "temp_climwin_input_file": {
+            "id": "temp_climwin_input_file",
+            "type": "right",
+            "properties": {
+              "color": "#9ac587",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 78
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/d18e1c01-a543-4a8c-80f2-4e1fc1d497f9/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "geosphere",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "budburst_file",
+                "type": "str"
+              },
+              {
+                "name": "event_file",
+                "type": "str"
+              },
+              {
+                "name": "extendedmeasurementorfact_file",
+                "type": "str"
+              },
+              {
+                "name": "occurrence_file",
+                "type": "str"
+              },
+              {
+                "name": "temperature_file",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "budburst_climwin_input_file",
+                "type": "str"
+              },
+              {
+                "name": "temp_climwin_input_file",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "prepare-climwin-input-koen-greuell-lifewatch-eu",
+            "description": "prepare-climwin-input-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T12:35:53.452863Z",
+            "modified": "2026-03-20T12:35:53.758816Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/prepare-climwin-input-koen-greuell-lifewatch-eu:5687c3d",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/93f0c62df31abc517c7a68e28c9d7d8b790c0c82/prepare-climwin-input-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 131
+        }
+      },
+      "70adfd7c-da4d-4e63-8e82-8e03daffb2b1": {
+        "id": "70adfd7c-da4d-4e63-8e82-8e03daffb2b1",
+        "position": {
+          "x": 1378.0642403614659,
+          "y": 615.708205779244
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "budburst_climwin_input_file": {
+            "id": "budburst_climwin_input_file",
+            "type": "left",
+            "properties": {
+              "color": "#c59387",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 17
+            }
+          },
+          "temp_climwin_input_file": {
+            "id": "temp_climwin_input_file",
+            "type": "left",
+            "properties": {
+              "color": "#9ac587",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 43
+            }
+          },
+          "firstWindow_file": {
+            "id": "firstWindow_file",
+            "type": "right",
+            "properties": {
+              "color": "#bf5140",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/6bfc0d88-bb1c-4f45-bfd4-122d700c8afc/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "climwin",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "budburst_climwin_input_file",
+                "type": "str"
+              },
+              {
+                "name": "temp_climwin_input_file",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "firstWindow_file",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "find-climate-window-koen-greuell-lifewatch-eu",
+            "description": "find-climate-window-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T12:36:08.178089Z",
+            "modified": "2026-03-20T12:36:08.684151Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/find-climate-window-koen-greuell-lifewatch-eu:0ced452",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/fbb65f1307e486cf69a63ef5fd509a337d63998d/find-climate-window-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "0c4e9d21-db13-4ad1-ae27-bbdde04167ca": {
+        "id": "0c4e9d21-db13-4ad1-ae27-bbdde04167ca",
+        "position": {
+          "x": 415.61243634682046,
+          "y": 753.9960626299421
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "temperature_file": {
+            "id": "temperature_file",
+            "type": "right",
+            "properties": {
+              "color": "#ac5393",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9fa3b224-38a7-431f-b3a6-9938637a11f6/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "purrr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "httr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "jsonlite",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "temperature_file",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "retrieve-knmi-temperature-data-koen-greuell-lifewatch-eu",
+            "description": "retrieve-knmi-temperature-data-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T12:38:03.263508Z",
+            "modified": "2026-03-20T12:38:03.614933Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/retrieve-knmi-temperature-data-koen-greuell-lifewatch-eu:2d5a0c0",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/f479c0c241619861b496c580088b252723adeae6/retrieve-knmi-temperature-data-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "1d2801ee-e506-4aa5-aa35-8afb13669272": {
+        "id": "1d2801ee-e506-4aa5-aa35-8afb13669272",
+        "position": {
+          "x": 1677.6772444389508,
+          "y": 616.1147540983605
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "firstWindow_file": {
+            "id": "firstWindow_file",
+            "type": "left",
+            "properties": {
+              "color": "#bf5140",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/322d0821-7a82-4ab5-b08e-7040208eaf5e/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "purrr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "climwin",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "ggpubr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "firstWindow_file",
+                "type": "str"
+              }
+            ],
+            "outputs": [],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "plot-climate-window-output-koen-greuell-lifewatch-eu",
+            "description": "plot-climate-window-output-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T12:41:09.708175Z",
+            "modified": "2026-03-20T12:41:10.269030Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/plot-climate-window-output-koen-greuell-lifewatch-eu:2a221a5",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/dd29634829ce711574f9c6f062af61acba2d25f8/plot-climate-window-output-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "54dddb81-7cda-4325-8bb1-5375c16a4537": {
+        "id": "54dddb81-7cda-4325-8bb1-5375c16a4537",
+        "position": {
+          "x": 1926.7611081566934,
+          "y": 332.116325083538
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "validation_all_zScores_file": {
+            "id": "validation_all_zScores_file",
+            "type": "left",
+            "properties": {
+              "color": "#53ac87",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a2c8bc6c-98b9-40d9-b8ac-21739e8dade0/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "purrr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "here",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "validation_all_zScores_file",
+                "type": "str"
+              }
+            ],
+            "outputs": [],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "forecast-bud-burst-koen-greuell-lifewatch-eu",
+            "description": "forecast-bud-burst-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T12:42:29.349925Z",
+            "modified": "2026-03-20T12:42:29.595981Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/forecast-bud-burst-koen-greuell-lifewatch-eu:74fd0d7",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/58bcf2b451481670e5a1936588ca8682b8a4427e/forecast-bud-burst-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "58305c41-cd0b-4cbb-8dd1-90f09d2fe1ba": {
+        "id": "58305c41-cd0b-4cbb-8dd1-90f09d2fe1ba",
+        "position": {
+          "x": 1636.747038639893,
+          "y": 308.7756052892662
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "budburst_climwin_input_file": {
+            "id": "budburst_climwin_input_file",
+            "type": "left",
+            "properties": {
+              "color": "#c59387",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "firstWindow_file": {
+            "id": "firstWindow_file",
+            "type": "left",
+            "properties": {
+              "color": "#bf5140",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "scenario_data_all_file": {
+            "id": "scenario_data_all_file",
+            "type": "left",
+            "properties": {
+              "color": "#e06ca2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "temp_climwin_input_file": {
+            "id": "temp_climwin_input_file",
+            "type": "left",
+            "properties": {
+              "color": "#9ac587",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "validation_all_zScores_file": {
+            "id": "validation_all_zScores_file",
+            "type": "right",
+            "properties": {
+              "color": "#53ac87",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 52
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/c7daf8e1-e643-4bc3-bc36-9b206d9a0ffb/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "purrr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "ggpubr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "budburst_climwin_input_file",
+                "type": "str"
+              },
+              {
+                "name": "firstWindow_file",
+                "type": "str"
+              },
+              {
+                "name": "scenario_data_all_file",
+                "type": "str"
+              },
+              {
+                "name": "temp_climwin_input_file",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "validation_all_zScores_file",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "validate-forecasting-model-koen-greuell-lifewatch-eu",
+            "description": "validate-forecasting-model-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T12:45:04.641267Z",
+            "modified": "2026-03-20T12:45:04.991982Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/validate-forecasting-model-koen-greuell-lifewatch-eu:10b54b5",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/156cd7547c3f52be6946a44e5bcb987b2da5560c/validate-forecasting-model-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 105
+        }
+      },
+      "83bdc0fc-5fdc-4ce6-a20a-78dba4ae9ffa": {
+        "id": "83bdc0fc-5fdc-4ce6-a20a-78dba4ae9ffa",
+        "position": {
+          "x": 422.45503209209704,
+          "y": 313.99747793190414
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "scenario_data_all_file": {
+            "id": "scenario_data_all_file",
+            "type": "right",
+            "properties": {
+              "color": "#e06ca2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/57f52521-2474-4fac-aab1-be819dc85b54/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-proto-dt",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-build:v0.1.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-veluwe-cell-runtime:v0.1.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "purrr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "httr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "scenario_data_all_file",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "retrieve-scenario-data-koen-greuell-lifewatch-eu",
+            "description": "retrieve-scenario-data-koen-greuell-lifewatch-eu",
+            "created": "2026-03-20T13:10:38.977902Z",
+            "modified": "2026-03-20T13:10:39.310599Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-proto-dt/retrieve-scenario-data-koen-greuell-lifewatch-eu:bbe0bdd",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-proto-dt/tree/c5d315bf4631afcd36bbcfb48e37f20645fdadd7/retrieve-scenario-data-koen-greuell-lifewatch-eu",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      }
+    },
+    "links": {
+      "47d76ed1-07af-452d-8b7a-41e9d329e869": {
+        "id": "47d76ed1-07af-452d-8b7a-41e9d329e869",
+        "from": {
+          "nodeId": "49f633d0-807c-4ffa-b90d-921c4ce8bb16",
+          "portId": "event_file"
+        },
+        "to": {
+          "nodeId": "c413ee0f-4b17-4436-8e03-1f7b465104ac",
+          "portId": "event_file"
+        }
+      },
+      "107f2693-5858-48e1-af9f-4b68a9438b64": {
+        "id": "107f2693-5858-48e1-af9f-4b68a9438b64",
+        "from": {
+          "nodeId": "49f633d0-807c-4ffa-b90d-921c4ce8bb16",
+          "portId": "extendedmeasurementorfact_file"
+        },
+        "to": {
+          "nodeId": "c413ee0f-4b17-4436-8e03-1f7b465104ac",
+          "portId": "extendedmeasurementorfact_file"
+        }
+      },
+      "bf8aa947-4e34-40e8-9a9d-d7ed91da1f43": {
+        "id": "bf8aa947-4e34-40e8-9a9d-d7ed91da1f43",
+        "from": {
+          "nodeId": "49f633d0-807c-4ffa-b90d-921c4ce8bb16",
+          "portId": "occurrence_file"
+        },
+        "to": {
+          "nodeId": "c413ee0f-4b17-4436-8e03-1f7b465104ac",
+          "portId": "occurrence_file"
+        }
+      },
+      "92eb97b8-d2a0-4e38-a782-f0541e7b60a6": {
+        "id": "92eb97b8-d2a0-4e38-a782-f0541e7b60a6",
+        "from": {
+          "nodeId": "c413ee0f-4b17-4436-8e03-1f7b465104ac",
+          "portId": "budburst_file"
+        },
+        "to": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "budburst_file"
+        }
+      },
+      "92b76d33-5572-4b4b-ac76-91988003467e": {
+        "id": "92b76d33-5572-4b4b-ac76-91988003467e",
+        "from": {
+          "nodeId": "49f633d0-807c-4ffa-b90d-921c4ce8bb16",
+          "portId": "event_file"
+        },
+        "to": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "event_file"
+        }
+      },
+      "0aacce30-fe77-4580-86b9-dc3299bbdb01": {
+        "id": "0aacce30-fe77-4580-86b9-dc3299bbdb01",
+        "from": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "budburst_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "58305c41-cd0b-4cbb-8dd1-90f09d2fe1ba",
+          "portId": "budburst_climwin_input_file"
+        }
+      },
+      "6cfdda3f-8a6f-4f05-8068-9e6df5e0fa3a": {
+        "id": "6cfdda3f-8a6f-4f05-8068-9e6df5e0fa3a",
+        "from": {
+          "nodeId": "58305c41-cd0b-4cbb-8dd1-90f09d2fe1ba",
+          "portId": "validation_all_zScores_file"
+        },
+        "to": {
+          "nodeId": "54dddb81-7cda-4325-8bb1-5375c16a4537",
+          "portId": "validation_all_zScores_file"
+        }
+      },
+      "f4f74a46-ac92-48fb-9f87-c74d1436cf60": {
+        "id": "f4f74a46-ac92-48fb-9f87-c74d1436cf60",
+        "from": {
+          "nodeId": "70adfd7c-da4d-4e63-8e82-8e03daffb2b1",
+          "portId": "firstWindow_file"
+        },
+        "to": {
+          "nodeId": "1d2801ee-e506-4aa5-aa35-8afb13669272",
+          "portId": "firstWindow_file"
+        }
+      },
+      "f177547e-de65-484f-8176-0fe420eb5730": {
+        "id": "f177547e-de65-484f-8176-0fe420eb5730",
+        "from": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "temp_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "70adfd7c-da4d-4e63-8e82-8e03daffb2b1",
+          "portId": "temp_climwin_input_file"
+        }
+      },
+      "998e181c-d1e1-4cca-a74c-aa0009e870f5": {
+        "id": "998e181c-d1e1-4cca-a74c-aa0009e870f5",
+        "from": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "budburst_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "70adfd7c-da4d-4e63-8e82-8e03daffb2b1",
+          "portId": "budburst_climwin_input_file"
+        }
+      },
+      "e7eef74a-96e3-4314-9b2b-b8a4008817f2": {
+        "id": "e7eef74a-96e3-4314-9b2b-b8a4008817f2",
+        "from": {
+          "nodeId": "49f633d0-807c-4ffa-b90d-921c4ce8bb16",
+          "portId": "extendedmeasurementorfact_file"
+        },
+        "to": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "extendedmeasurementorfact_file"
+        }
+      },
+      "78c20892-3d6b-4a6e-8358-8e5b90f1309c": {
+        "id": "78c20892-3d6b-4a6e-8358-8e5b90f1309c",
+        "from": {
+          "nodeId": "0c4e9d21-db13-4ad1-ae27-bbdde04167ca",
+          "portId": "temperature_file"
+        },
+        "to": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "temperature_file"
+        }
+      },
+      "ee7dad4e-8508-4c20-8ec4-4f2e13153a67": {
+        "id": "ee7dad4e-8508-4c20-8ec4-4f2e13153a67",
+        "from": {
+          "nodeId": "49f633d0-807c-4ffa-b90d-921c4ce8bb16",
+          "portId": "occurrence_file"
+        },
+        "to": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "occurrence_file"
+        }
+      },
+      "f495ba32-aa10-410d-8eed-5f21ea9b16f4": {
+        "id": "f495ba32-aa10-410d-8eed-5f21ea9b16f4",
+        "from": {
+          "nodeId": "70adfd7c-da4d-4e63-8e82-8e03daffb2b1",
+          "portId": "firstWindow_file"
+        },
+        "to": {
+          "nodeId": "58305c41-cd0b-4cbb-8dd1-90f09d2fe1ba",
+          "portId": "firstWindow_file"
+        }
+      },
+      "5760882d-70a3-48f6-a572-2b5d332285c9": {
+        "id": "5760882d-70a3-48f6-a572-2b5d332285c9",
+        "from": {
+          "nodeId": "5847ab3a-f175-423b-849d-d2f50682340f",
+          "portId": "temp_climwin_input_file"
+        },
+        "to": {
+          "nodeId": "58305c41-cd0b-4cbb-8dd1-90f09d2fe1ba",
+          "portId": "temp_climwin_input_file"
+        }
+      },
+      "f5f24dbe-c231-4ebd-9fd1-26da982360ca": {
+        "id": "f5f24dbe-c231-4ebd-9fd1-26da982360ca",
+        "from": {
+          "nodeId": "83bdc0fc-5fdc-4ce6-a20a-78dba4ae9ffa",
+          "portId": "scenario_data_all_file"
+        },
+        "to": {
+          "nodeId": "58305c41-cd0b-4cbb-8dd1-90f09d2fe1ba",
+          "portId": "scenario_data_all_file"
+        }
+      }
+    },
+    "selected": {},
+    "hovered": {}
+  }
+}
